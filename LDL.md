@@ -2,4 +2,4 @@
 
 Low density lipoproteins
 
-This is the "low" cholesterol.
+This is the "bad" cholesterol.
