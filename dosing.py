@@ -44,16 +44,17 @@ def dosages(diagnosis, weight):
     dosage_mg_first_day = weight * dosage_mg_per_kg
     return dosage_mg_first_day
 
-def output(dosage_mg_first_day):
+def output(dosage_mg_first_day, weight):
     print("CORRECT DOSAGE")
     print("For a patient weighing {:.1f} kg,".format(weight))
     print("  the correct dosage is {:.1f} mg the first day"
           .format(dosage_mg_first_day))
 
-
-if __name__ == '__main__':
-    #dose_amount()
+def program_driver():
     diagnosis, weight_input = inputs()
     weight = weight_conversion(weight_input)
     dosage_mg_first_day = dosages(diagnosis,weight)
-    output(dosage_mg_first_day)
+    output(dosage_mg_first_day, weight)
+
+if __name__ == '__main__':
+    program_driver()
